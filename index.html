@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#191815" />
+    <meta name="description" content="NOIRÉ PARFUMS — عطور استثنائية، صُنعت لتبقى." />
+    <title>NOIRÉ PARFUMS — Luxury Beyond Fragrance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="products.js" defer></script>
+    <script src="translations.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement"><span>توصيل مجاني للطلبات ابتداءً من 900 درهم</span><span class="announcement__divider">✦</span><span>تغليف يليق بكل حكاية</span></div>
+    <header class="site-header">
+      <button class="icon-button mobile-menu" type="button" aria-label="فتح القائمة" data-action="menu">☰</button>
+      <nav class="main-nav" aria-label="القائمة الرئيسية">
+        <a href="#/">الرئيسية</a>
+        <div class="nav-products">
+          <a class="nav-products__link" href="#/products">المنتجات</a>
+          <div class="nav-products__menu">
+            <a href="#/products">جميع المنتجات</a>
+            <a href="#/category/men">للرجال</a>
+            <a href="#/category/women">للنساء</a>
+            <a href="#/category/unisex">مشترك</a>
+          </div>
+        </div>
+        <a href="#/contact">التواصل</a>
+        <a href="#/about">من نحن</a>
+      </nav>
+      <a class="brand" href="#/" aria-label="NOIRÉ PARFUMS - الصفحة الرئيسية"><span class="brand__name">NOIRÉ <i>PARFUMS</i></span><span class="brand__tagline">LUXURY BEYOND FRAGRANCE</span></a>
+      <div class="header-actions">
+        <button class="icon-button" type="button" aria-label="بحث" data-action="search-toggle">⌕</button>
+        <a class="icon-button" href="#/favorites" aria-label="المفضلة">♡<b class="count-badge" id="favorite-count"></b></a>
+        <a class="cart-link" href="#/cart" aria-label="سلة المشتريات"><i class="fa-solid fa-bag-shopping cart-link__icon" aria-hidden="true"></i><span class="cart-link__label">السلة</span><b class="count-badge" id="cart-count"></b></a>
+        <label class="language-control"><select id="language-select" aria-label="لغة الموقع"><option value="ar">العربية</option><option value="fr">Français</option></select></label>
+      </div>
+    </header>
+    <form class="search-bar" id="search-form" hidden>
+      <input id="search-input" type="search" placeholder="ابحث عن عطرك..." aria-label="ابحث عن عطرك" />
+      <button type="submit">بحث <span>←</span></button>
+    </form>
+    <div id="app"></div>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand"><a class="brand brand--footer" href="#/"><span class="brand__name">NOIRÉ <i>PARFUMS</i></span><span class="brand__tagline">LUXURY BEYOND FRAGRANCE</span></a><p>عطور استثنائية، صُنعت لتبقى.<br />تفاصيل صغيرة. أثر لا يزول.</p><div class="footer-socials" aria-label="تواصل مع NOIRÉ"><a href="https://www.instagram.com/abdeallah.9?srtk=Zmp0YzF1dGR4bHkz" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a href="https://wa.me/212724698641" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a><a href="mailto:noire.parfums@gmail.com" aria-label="البريد الإلكتروني"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a><a href="tel:+212724698641" aria-label="اتصل بنا"><i class="fa-solid fa-phone" aria-hidden="true"></i></a></div></div>
+        <div class="footer-links"><h3>اكتشف NOIRÉ</h3><a href="#/products">كل العطور</a><a href="#/about">حكايتنا</a><a href="#/contact">تواصل معنا</a></div>
+        <div class="footer-links"><h3>خدمة العملاء</h3><a href="#/contact">الشحن والتوصيل</a><a href="#/contact">الأسئلة الشائعة</a><a href="#/contact">سياسة الاستبدال</a></div>
+        <form class="newsletter" id="newsletter-form"><h3>رسائل من عالم NOIRÉ</h3><p>اكتشف الإصدارات الجديدة والحكايات خلف كل عطر.</p><div class="newsletter__field"><input type="email" required placeholder="بريدك الإلكتروني" aria-label="بريدك الإلكتروني" /><button type="submit" aria-label="اشتراك">←</button></div><small class="success-text" id="newsletter-success" hidden>شكراً لك، أُضيف بريدك إلى قائمتنا.</small></form>
+      </div>
+      <div class="footer-bottom"><span>© 2025 NOIRÉ PARFUMS. جميع الحقوق محفوظة.</span><span>LUXURY BEYOND FRAGRANCE</span><span>صُنع بعناية في المغرب</span></div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <button class="back-top" type="button" aria-label="العودة للأعلى" data-action="top">↑</button>
+  </body>
+</html>
