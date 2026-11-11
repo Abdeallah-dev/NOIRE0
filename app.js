@@ -155,7 +155,7 @@ function sectionHeading(eyebrow, title, description = '', link = '', href = '#/p
 function homePage() {
   return `<main>
     <section class="hero">
-      <img class="hero__image" src="public/images/noire-hero.png" alt="زجاجة عطر NOIRÉ بإضاءة ذهبية على خلفية سوداء" />
+      <img class="hero__image" src="IMG-20261110-WA0001.jpg" alt="زجاجة عطر NOIRÉ بإضاءة ذهبية على خلفية سوداء" />
       <div class="hero__veil"></div>
       <div class="hero__content"><span class="eyebrow eyebrow--gold">NOIRÉ PARFUMS · MAISON DE PARFUM</span><h1>ليس عطراً<br /><em>فحسب.</em> بل أثر.</h1><p>تركيبات استثنائية تحتفي بالفخامة الهادئة<br />وتترك حكاية على البشرة.</p><a class="button button--gold" href="#/products">اكتشف المجموعة <span>←</span></a><div class="hero__signature">LUXURY BEYOND FRAGRANCE <span>✦</span></div></div>
       <div class="hero__index">01 <span>/</span> 03</div><div class="hero__vertical">EAU DE PARFUM · CASABLANCA</div>
